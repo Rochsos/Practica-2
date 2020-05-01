@@ -2,13 +2,26 @@ package com.dis.practica2;
 
 public class Usuario {
 	
+	//Variables a usar
 	private String nombre;
 	private String apellidos;
 	private String empresa;
 	private String telefono;
 	private String email;
-	private String direeccion;
+	private String direccion;
 	
+	//Generamos el constructor con todos los campos
+	public Usuario(String nombre, String apellidos, String empresa, String telefono, String email, String direccion) {
+		super();
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.empresa = empresa;
+		this.telefono = telefono;
+		this.email = email;
+		this.direccion = direccion;
+	}
+	
+	//Generamos los getters y setters
 	public String getNombre() {
 		return nombre;
 	}
@@ -49,23 +62,12 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getDireeccion() {
-		return direeccion;
+	public String getDireccion() {
+		return direccion;
 	}
 
-	public void setDireeccion(String direeccion) {
-		this.direeccion = direeccion;
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
 	}
-
-	public Usuario(String nombre, String apellidos, String empresa, String telefono, String email, String direeccion) {
-		super();
-		this.nombre = nombre;
-		this.apellidos = apellidos;
-		this.empresa = empresa;
-		this.telefono = telefono;
-		this.email = email;
-		this.direeccion = direeccion;
-	}
-
 
 }

@@ -35,10 +35,8 @@ public class JsonUsuario {
 				UsuarioTemp.setApellidos(UsuarioJson.getString("apellidos"));
 				UsuarioTemp.setEmpresa(UsuarioJson.getString("empresa"));
 				UsuarioTemp.setTelefono(UsuarioJson.getString("telefono"));
-				UsuarioTemp.setDireeccion(UsuarioJson.getString("direeccion"));
-				
-				
-				
+				UsuarioTemp.setDireccion(UsuarioJson.getString("direccion"));
+								
 				Usuarios.add(UsuarioTemp);
 			}
 			
