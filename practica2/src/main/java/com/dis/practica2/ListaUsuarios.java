@@ -13,7 +13,7 @@ public class ListaUsuarios {
 	private ArrayList <Usuario> listausuarios;
 	
 	// Creamos el constructor
-	private ListaUsuarios() {
+	ListaUsuarios() {
 		listausuarios = new ArrayList<Usuario>();
 	}
 	
