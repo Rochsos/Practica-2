@@ -37,7 +37,7 @@ public class Predeterminado {
 
 			// Añadimos el segundo contacto
 			Usuario predeterminado2 = new Usuario(nombre2, apellidos2, empresa2, telefono2, email2, direccion2);
-			ListaUsuarios.getInstance().getUsuariosLista().add(predeterminado1);
+			ListaUsuarios.getInstance().getUsuariosLista().add(predeterminado2);
 
 		}
 	}
