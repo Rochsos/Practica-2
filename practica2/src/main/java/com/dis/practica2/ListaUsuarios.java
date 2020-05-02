@@ -33,14 +33,7 @@ public class ListaUsuarios {
 		this.listausuarios.remove(u);
 
 	}
-/*
-	// voy a crear un metodo que va a ser para actualizar objetos
-	public void updateUsuario(Usuario u) {
 
-		this.listausuarios.remove(u);
-
-	}
-*/
 	// Creamos la instancia
 	public static ListaUsuarios getInstance() {
 		if (lista == null) {
