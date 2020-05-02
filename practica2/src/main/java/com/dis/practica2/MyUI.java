@@ -138,7 +138,7 @@ public class MyUI extends UI {
 
 		// Boton de añadir contacto
 		Button buttonCreate = new Button("Añadir contacto");
-		buttonCreate.setWidth("250px");
+		buttonCreate.setWidth("200px");
 		buttonCreate.addClickListener(e -> {
 			// Comprobamos si los textfield que son necesarios segun el enunciado, estan
 			// vacios (Nombre y telefono)
@@ -146,15 +146,16 @@ public class MyUI extends UI {
 				Notification.show("No se puede añadir el contacto, ya que faltan por completar datos obligatorios",
 						Notification.Type.HUMANIZED_MESSAGE).setDelayMsec(3000);
 			}
-			Notification.show("El contacto ha sido añadido a la agenda correctamente", Notification.Type.HUMANIZED_MESSAGE).setDelayMsec(3000);
-			//numerousuario.add(1);
-			Usuario usuario = new Usuario(nombre.getValue(), apellidos.getValue(), empresa.getValue(),
+			else {
+				Notification.show("El contacto ha sido añadido a la agenda correctamente", Notification.Type.HUMANIZED_MESSAGE).setDelayMsec(3000);
+			
+				Usuario usuario = new Usuario(nombre.getValue(), apellidos.getValue(), empresa.getValue(),
 					telefono.getValue(), email.getValue(), direccion.getValue());
-			//lista.addUsuario(usuario);
-			ListaUsuarios.getInstance().getUsuariosLista().add(usuario);
-			grid.setItems(ListaUsuarios.getInstance().getUsuariosLista());
-				// para que cuando se añada un nuevo objeto se vuelva a
-														// crear/actualizar la tabla
+				//lista.addUsuario(usuario);
+				ListaUsuarios.getInstance().getUsuariosLista().add(usuario);
+				grid.setItems(ListaUsuarios.getInstance().getUsuariosLista());
+			}
+				
 			nombre.clear();
 			apellidos.clear();
 			empresa.clear();
@@ -165,7 +166,7 @@ public class MyUI extends UI {
 		
 		// Boton de eliminar contacto	
 		Button buttonDelete = new Button("Eliminar contacto");
-		buttonDelete.setWidth("250px");
+		buttonDelete.setWidth("200px");
 		buttonDelete.addClickListener(e2 -> {
 	
 		int i = 0;
@@ -200,7 +201,7 @@ public class MyUI extends UI {
 		
 		// Boton de modificar contacto	
 				Button buttonUpdate = new Button("Modificar contacto");
-				buttonUpdate.setWidth("250px");
+				buttonUpdate.setWidth("200px");
 				buttonUpdate.addClickListener(e2 -> {
 			
 				int i = 0;
@@ -239,7 +240,7 @@ public class MyUI extends UI {
 				
 		//Boton de detalle del contacto
 				Button buttonDetalle = new Button("Detalle del contacto");
-				buttonDetalle.setWidth("250px");
+				buttonDetalle.setWidth("200px");
 				buttonDetalle.addClickListener(e -> {
 					
 					int i = 0;
