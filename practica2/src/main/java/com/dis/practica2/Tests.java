@@ -50,11 +50,11 @@ public class Tests {
 	        usuario.setDireccion("Calle de Alcalá");
 	        
 	        assertTrue(usuario.getNombre() == "Diego");
-	        assertTrue(usuario.getNombre() == "Ruiz");
-	        assertTrue(usuario.getNombre() == "Santander");
-	        assertTrue(usuario.getNombre() == "620172004");
-	        assertTrue(usuario.getNombre() == "diegor@gmail.com");
-	        assertTrue(usuario.getNombre() == "Calle de Alcalá");
+	        assertTrue(usuario.getApellidos() == "Ruiz");
+	        assertTrue(usuario.getEmpresa() == "Santander");
+	        assertTrue(usuario.getTelefono() == "620172004");
+	        assertTrue(usuario.getEmail() == "diegor@gmail.com");
+	        assertTrue(usuario.getDireccion() == "Calle de Alcalá");
 	    }
 		
 
